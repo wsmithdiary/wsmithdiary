@@ -1,40 +1,40 @@
 <div align="center">
 
-# 🕳️ wsmithdiary
+# 📓 wsmithdiary
 
-**Brasil · Remoto**
-
-*"Quem controla o `git log` controla o passado.*
-*Quem controla o passado controla a retrospectiva."*
+### Desenvolvedor · React · TypeScript · Node
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Arch](https://img.shields.io/badge/Arch_Linux-1c1917?style=for-the-badge&logo=archlinux&logoColor=f59e0b)
-![Kali](https://img.shields.io/badge/Kali-1c1917?style=for-the-badge&logo=kalilinux&logoColor=f59e0b)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+**Disponível para remoto**
+
+[![LinkedIn](https://img.shields.io/badge/Falar_comigo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU-PERFIL)
 
 </div>
 
 ---
 
-## 📋 Ficha do cidadão
+## 📓 O diário
 
-Escrevo React, TypeScript e Node.
+Escrevo interfaces em React com TypeScript e serviços em Node.
 
-Rodo Arch e Kali como sistema principal — não em máquina virtual, não em WSL.
-O terminal é onde eu trabalho.
-
-Estou indo para segurança. O front-end é a base, não o destino.
+Trabalho com a lógica separada da interface: regra de negócio em TypeScript
+puro, testada sem renderizar nada. Escrevo o teste antes e confirmo que ele
+falha — teste que nunca falhou não provou nada.
 
 > [!NOTE]
-> O nome do perfil é o diário do Winston Smith. Ele escrevia o que não podia ser
-> dito em voz alta, num caderno que o Estado não conhecia. Aqui é a mesma coisa,
-> só que público e com `git blame` funcionando contra mim.
+> O nome vem do diário de Winston Smith, em *1984*. Ele escrevia sabendo que
+> aquilo poderia ser lido por qualquer um. Este perfil segue a mesma regra:
+> aqui fica o que eu sustento em público. O resto é conversa.
 
 <div align="center">
-
-### 🧱 OS TRÊS SLOGANS
 
 ```
 COMMIT É MEMÓRIA
@@ -46,91 +46,95 @@ README É LIBERDADE
 
 ---
 
-## 🎩 O detector de farsante
+## 🎯 O que eu entrego
 
-Holden Caulfield passou um livro inteiro chamando todo mundo de farsante. Ele
-teria odiado perfil que empilha quarenta ícones de tecnologia como troféu.
+<table>
+<tr>
+<th>⚙️ Sem consultar nada</th>
+<th>📖 Consultando a documentação</th>
+</tr>
+<tr>
+<td>
 
-Ícone não é prova. Então: o que eu faço, não o que eu listo.
+- Componente React com estado, efeito e `fetch`
+- Tipagem em TypeScript no dia a dia
+- HTML semântico e CSS com Tailwind
+- Branch, commit semântico, fluxo de PR
 
-| | |
-|---|---|
-| ⚙️ **Entrego sem consultar nada** | Componente React com estado e `fetch`, TypeScript no dia a dia, HTML semântico |
-| 📖 **Entrego com a documentação aberta** | Vitest e Testing Library, acessibilidade em formulário, Git em situação feia, PostgreSQL |
-| ⛏️ **Estou atacando agora** | Segurança ofensiva, redes, arquitetura que aguenta gente usando |
+</td>
+<td>
 
-A terceira linha é a que interessa. As duas de cima são o que já está pronto.
+- Suíte de testes com Vitest e Testing Library
+- Formulário acessível: `useId`, `aria-describedby`, `role="alert"`
+- Modelagem e consulta em PostgreSQL
+- Conflito de merge e reescrita de histórico
 
----
+</td>
+</tr>
+</table>
 
-## 🦆 Para onde vão os patos quando o lago congela
-
-Holden fazia essa pergunta para todo taxista de Nova York. Ninguém sabia
-responder. Ele continuava perguntando.
-
-As minhas:
-
-- 🧮 Onde exatamente uma string vira número — na validação, no cálculo, ou numa
-  função só dela?
-- 🔒 Por que o navegador exige contexto seguro para registrar um service worker?
-  Porque senão o wifi da praça de alimentação vira dono do seu domínio. Para
-  sempre.
-- 🐳 Quando um container se paga, e quando ele é só cerimônia?
-- 🧪 Como se escreve um teste que falha pelo motivo certo?
-
-Pergunta que eu não sei responder é a única coisa que move o próximo commit.
+> [!TIP]
+> **Estudando agora:** segurança ofensiva, redes e arquitetura de aplicação que
+> aguenta uso real.
 
 ---
 
-## 🧢 O apanhador
+## 🔄 Como eu trabalho
 
-> *"Fico à beira de um precipício maluco. E o que eu tenho que fazer é pegar
-> todo mundo que vem correndo e não olha para onde vai."*
+```mermaid
+flowchart LR
+    A["✍️ escrevo o teste"] --> B["🔴 vejo falhar"]
+    B --> C["🔧 corrijo"]
+    C --> D["🟢 vejo passar"]
+    D --> E["📌 commit"]
+    E --> A
 
-É o que programar bem parece, na prática:
-
-- 🛡️ **Validação** que segura o usuário antes de ele cair
-- 📢 **Erro** que diz o que fazer, e que o leitor de tela anuncia junto do campo
-  que o causou
-- 🧯 **Tratamento** para o caminho que ninguém planejou
-- ♿ **Acessibilidade** — não é enfeite: é o que faz a tela ser testável do jeito
-  que o usuário a enxerga
-
-Ninguém elogia o apanhador. Só se percebe quando ele não está lá.
-
----
-
-## 🕳️ Buraco da memória
+    classDef vermelho fill:#7f1d1d,stroke:#ef4444,stroke-width:2px,color:#fecaca
+    classDef verde fill:#14532d,stroke:#22c55e,stroke-width:2px,color:#bbf7d0
+    classDef ambar fill:#78350f,stroke:#f59e0b,stroke-width:2px,color:#fde68a
+    class B vermelho
+    class D verde
+    class A,C,E ambar
+```
 
 No Ministério da Verdade, o registro inconveniente ia para o buraco da memória e
-passava a nunca ter existido. Aqui o histórico fica. Inclusive o commit ruim de
-terça.
-
-**🧾 Gerador de Orçamentos** — `React` `TypeScript` `Vite` `Vitest`
-
-Monta orçamento de mão de obra linha a linha e exporta o PDF pronto.
-
-A regra de negócio vive em `core/`, em TypeScript puro que não conhece React.
-A maior parte da lógica é testada sem renderizar nada. Cada teste novo é
-validado quebrando o código de propósito antes de consertar — teste que nunca
-falhou não provou nada.
-
-Escrito linha a linha. Eu defendo cada decisão dele.
+passava a nunca ter existido. `git` não tem buraco de memória — e é por isso que
+o histórico serve de currículo.
 
 ---
+
+## 🧾 Projeto
 
 <div align="center">
 
-## 👁️ A teletela
+### Gerador de Orçamentos
 
-<sub>funciona nos dois sentidos: eu vejo você, você vê os meus commits</sub>
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-![Stats](https://github-readme-stats.vercel.app/api?username=wsmithdiary&show_icons=true&hide_border=true&bg_color=0d1117&title_color=f59e0b&icon_color=f59e0b&text_color=c9d1d9)
-![Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=wsmithdiary&layout=compact&hide_border=true&bg_color=0d1117&title_color=f59e0b&text_color=c9d1d9)
+</div>
 
-![Vigilância contínua](https://raw.githubusercontent.com/wsmithdiary/wsmithdiary/output/github-contribution-grid-snake-dark.svg)
+Aplicação web que monta orçamento de mão de obra linha a linha, calcula os
+totais e exporta o PDF pronto. Sem back-end, sem etapa extra.
 
-<sub><i>O Grande Irmão observa. Ele só não sabe que metade disso é <code>fix: typo</code>.</i></sub>
+**Decisões que eu defendo:**
+
+- 🧮 A regra de negócio vive em `core/`, em TypeScript puro que não importa
+  React. A maior parte da lógica é testada sem DOM e sem `act()`.
+- 🇧🇷 Campos numéricos são `type="text"` com `inputMode="decimal"`, porque
+  `type="number"` recusa a vírgula decimal que o usuário brasileiro digita. A
+  conversão acontece na validação, num só lugar.
+- 🧼 Validação é função pura: devolve os erros por campo e deixa a decisão com o
+  componente.
+- ♿ Acessibilidade não é enfeite — é o que faz o formulário ser testável por
+  papel e por nome, do jeito que o usuário o enxerga.
+
+<div align="center">
+
+[![Ver o repositório](https://img.shields.io/badge/Ver_o_repositório-1c1917?style=for-the-badge&logo=github&logoColor=f59e0b)](https://github.com/wsmithdiary/SEU-REPO)
 
 </div>
 
@@ -140,11 +144,13 @@ Escrito linha a linha. Eu defendo cada decisão dele.
 
 ## 📡 Contato
 
+Currículo, nome completo e histórico pelo LinkedIn.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU-PERFIL)
-[![Email](https://img.shields.io/badge/Email-1c1917?style=for-the-badge&logo=gmail&logoColor=f59e0b)](mailto:SEU-EMAIL)
 
 <br>
 
-<sub><i>"Ele amava o Grande Irmão." — mas assinou o commit com GPG antes.</i></sub>
+<sub><i>"Quem controla o passado controla o futuro."<br>
+Por isso o histórico fica público e o resto não.</i></sub>
 
 </div>

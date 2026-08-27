@@ -1,0 +1,35 @@
+name: diário
+on:
+  schedule:
+    - cron: '17 5 * * *' # 02:17 em São Paulo
+  workflow_dispatch: # botão manual na aba Actions
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: gera o svg
+        env:
+          # usa o token padrão do Actions; se preferir um PAT com read:user,
+          # crie o secret DIARIO_TOKEN e ele passa na frente
+          GITHUB_TOKEN: ${{ secrets.DIARIO_TOKEN || secrets.GITHUB_TOKEN }}
+        run: node scripts/diario.mjs --login "${{ github.repository_owner }}" --out dist/diario.svg
+      - name: publica na branch output
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q
+          git checkout -q -b output
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -q -m 'chore: atualiza o registro diário de contribuições'
+          git push -q --force "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
