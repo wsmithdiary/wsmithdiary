@@ -2,7 +2,7 @@ name: Vigilância contínua
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3 * * *"   # UTC — meia-noite em São Paulo
   workflow_dispatch:
   push:
     branches:
@@ -16,16 +16,19 @@ jobs:
     steps:
       - name: Gera o SVG a partir do grid de contribuições
         uses: Platane/snk@v3
-        id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#f59e0b
 
       - name: Publica na branch output
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+        run: |
+          cd dist
+          git init -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore: atualiza svg do grid de contribuições"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
