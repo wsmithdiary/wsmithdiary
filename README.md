@@ -23,7 +23,7 @@ Remoto, São Paulo, Brasil.
 >
 > **No ar:** um gerador de orçamento de mão de obra para construção civil. Lança os serviços linha a linha, calcula com aritmética decimal exata e formata em real — tudo dentro do navegador, sem servidor, sem instalação, sem dado saindo da máquina de quem usa. A exportação em PDF é o que está sendo escrito agora. **[Abrir →](https://empreiteira-website.vercel.app)**
 >
-> **Procuro posição remota como Desenvolvedor Full Stack.** → **dev.gabriel2000@gmail.com**
+> **Procuro posição remota como Desenvolvedor Full Stack.** → **winston.19i80@gmail.com**
 
 O resto desta página é a prova de cada uma dessas quatro linhas.
 
@@ -132,7 +132,7 @@ Agora refaço essa trilha desde os fundamentos, comando por comando, rodando cad
 
 Moro em Araçariguama, São Paulo, Brasil, e procuro posição remota como Desenvolvedor Full Stack — trabalho tanto no Front-end quanto no Back-end.
 
-**dev.gabriel2000@gmail.com**
+**winston.19i80@gmail.com**
 
 <div align="center"><img src="https://img.shields.io/badge/-14265E?style=flat&color=14265E" width="24%" height="3"><img src="https://img.shields.io/badge/-C1272D?style=flat&color=C1272D" width="24%" height="3"><img src="https://img.shields.io/badge/-F2C33C?style=flat&color=F2C33C" width="24%" height="3"><img src="https://img.shields.io/badge/-1B3A93?style=flat&color=1B3A93" width="24%" height="3"></div>
 
